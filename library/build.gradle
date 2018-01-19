@@ -25,3 +25,6 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
 }
+if (isForUpload2Maven()) { // 判断是否需要上传到远程仓库，不需要上传就不会执行下面的脚本，加快编译速度
+    apply from: "bintrayUpload.gradle"
+}
