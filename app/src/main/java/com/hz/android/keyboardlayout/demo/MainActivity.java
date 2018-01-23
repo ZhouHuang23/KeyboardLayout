@@ -17,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onKeyboardStateChanged(boolean isActive, int keyboardHeight) {
                 if (isActive) { //软键盘弹起
-                    Toast.makeText(MainActivity.this, "keyboardHeight =" + keyboardHeight, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "弹起，keyboardHeight =" + keyboardHeight, Toast.LENGTH_SHORT).show();
                 } else { //软键盘隐藏
-                    Toast.makeText(MainActivity.this, "软键盘隐藏" + keyboardHeight, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "隐藏" , Toast.LENGTH_SHORT).show();
                 }
             }
         });

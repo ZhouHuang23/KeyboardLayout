@@ -9,7 +9,7 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 
 /**
- * 自定义布局
+ * 自定义软键盘弹起/隐藏监听布局
  * Created by Administrator on 2018/1/15.
  */
 
@@ -48,7 +48,7 @@ public class KeyboardLayout extends FrameLayout {
             int popUpHeight = screenHeight - rect.bottom;
 
             boolean isActive = false;
-            if (Math.abs(popUpHeight) > (screenHeight / 5)) {
+            if (Math.abs(popUpHeight) > (screenHeight / 5)) { //弹起高度大于屏幕的1/5，即认为软件盘弹起
                 isActive = true;
                 keyboardHeight = popUpHeight;
             }
